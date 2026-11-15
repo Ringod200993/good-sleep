@@ -1,7 +1,7 @@
 const BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `good-sleep-${BASE.pathname}-`;
-const CACHE = CACHE_PREFIX + 'v4';
-const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'pwa.js', 'youtube.js', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png'].map(path => new URL(path, BASE).href);
+const CACHE = CACHE_PREFIX + 'v5';
+const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'pwa.js', 'youtube.js', 'audio-library.js', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png'].map(path => new URL(path, BASE).href);
 const INDEX = new URL('index.html', BASE).href;
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
